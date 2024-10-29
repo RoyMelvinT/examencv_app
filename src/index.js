@@ -2,19 +2,20 @@ import express from 'express'
 import {dirname, join} from 'path'
 import { fileURLToPath } from 'url'
 import indexRouter from './router/index.js'
-
 const app= express()
 
 const __dirname= dirname(fileURLToPath(import.meta.url))
-console.log(join(__dirname, 'views'))
-app.set('views', join(__dirname, 'views'))
+console.log(join(__dirname , 'views'))
+app.set('views', join(__dirname,'views'))
+app.use(indexRouter)
 
+app.use(express.static(join(__dirname,'public')))
 
-// examencv_app/src/views
+//D:\Movies_app\src\views
 
 app.set('view engine', 'ejs')
 
 
 
-app.listen(8085)
-console.log("el servidor esta corriendo en el puerto: ",8085)
+app.listen(3000)
+console.log("El servidor está siendo escuchado en el puerto: ",3000)
