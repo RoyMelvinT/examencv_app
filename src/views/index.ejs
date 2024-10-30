@@ -6,14 +6,105 @@
    
     <title><%= title %></title>
     <%- include('partials/head') %>
- 
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f9;
+          color: #333;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        }
+    
+        .profile-container {
+          max-width: 700px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        h1, h2 {
+          color: #2c3e50;
+          text-align: left;
+          font-size: 1.5em;
+          margin-bottom: 8px;
+          border-bottom: 2px solid #2c3e50;
+          padding-bottom: 5px;
+        }
+    
+        .section {
+          margin-bottom: 20px;
+        }
+    
+        p {
+          line-height: 1.6;
+          font-size: 1em;
+          text-align: justify;
+          margin: 5px 0;
+        }
+    
+        ul {
+          list-style-type: disc;
+          margin: 5px 0 10px 20px;
+          padding: 0;
+        }
+    
+        li {
+          line-height: 1.6;
+        }
+      </style>
 </head>
 <body>
     <%- include('partials/navigation') %>
-    <h1>Hola</h1>
-    <h2>Soy Roy y este es mi primer proyecto en nodeJS</h2>
-    <h3>Holaaa a todos, bienvenidos</h3>
+    <h1>Bienvenidos a 
+        Mi Curriculum Web</h1>
+    
+  
     <img src="/img/perfil.JPG" >
     <%- include('partials/footer') %>
+    <body>
+        <div class="profile-container">
+          <!-- Perfil Profesional -->
+          <div class="section">
+            <h1>Perfil Profesional</h1>
+            <p>
+              Soy estudiante de Ingeniería de Sistemas, apasionado por la tecnología, la optimización de procesos y el desarrollo de soluciones innovadoras en entornos digitales. Durante mi formación académica, he adquirido una sólida base en programación, administración de bases de datos, redes y seguridad informática, complementada con habilidades en análisis de sistemas y gestión de proyectos.
+            </p>
+          </div>
+      
+          <!-- Datos Personales -->
+          <div class="section">
+            <h2>Datos Personales</h2>
+            <p><strong>Nombre:</strong> Roy Melvin Trujillo Mamani</p>
+            <p><strong>Teléfono:</strong> +51 989292899</p>
+            <p><strong>Email:</strong> roymelvin21@email.com</p>
+            <p><strong>Ubicación:</strong> Lima, Perú</p>
+          </div>
+      
+          <!-- Formación Académica -->
+          <div class="section">
+            <h2>Formación Académica</h2>
+            <ul>
+              <li><strong>Ingeniería de Sistemas</strong> - Universidad Peruana Union (2020 - Presente)</li>
+              <li><strong>Curso de Programación en Python</strong> - Platzi (2023)</li>
+              <li><strong>Certificación en Administración de Bases de Datos</strong> - Oracle Academy (2022)</li>
+            </ul>
+          </div>
+      
+          <!-- Proyectos -->
+          <div class="section">
+            <h2>Proyectos</h2>
+            <ul>
+              <li><strong>Sistema de Gestión de Inventario:</strong> Desarrollo de un sistema en JavaScript para la gestión de inventarios, optimizando el control de existencias y reportes de ventas.</li>
+              <li><strong>App de Tareas Colaborativas:</strong> Aplicación móvil desarrollada en Flutter para la organización de tareas en equipo, incluyendo integración de bases de datos Firebase y notificaciones en tiempo real.</li>
+              <li><strong>Análisis de Datos para Redes Sociales:</strong> Proyecto en Python para el análisis de tendencias en redes sociales utilizando técnicas de web scraping y análisis de sentimientos.</li>
+            </ul>
+          </div>
+        </div>
+      </body>
 </body>
 </html>
