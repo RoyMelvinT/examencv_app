@@ -2,109 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title><%= title %></title>
-    <%- include('partials/head') %>
-    <style>
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #f4f4f9;
-          color: #333;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 100vh;
-        }
-    
-        .profile-container {
-          max-width: 700px;
-          background-color: #fff;
-          padding: 20px;
-          border-radius: 8px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-    
-        h1, h2 {
-          color: #2c3e50;
-          text-align: left;
-          font-size: 1.5em;
-          margin-bottom: 8px;
-          border-bottom: 2px solid #2c3e50;
-          padding-bottom: 5px;
-        }
-    
-        .section {
-          margin-bottom: 20px;
-        }
-    
-        p {
-          line-height: 1.6;
-          font-size: 1em;
-          text-align: justify;
-          margin: 5px 0;
-        }
-    
-        ul {
-          list-style-type: disc;
-          margin: 5px 0 10px 20px;
-          padding: 0;
-        }
-    
-        li {
-          line-height: 1.6;
-        }
-      </style>
+    <title>CV - Ocat</title>
+    <meta name="description" content="simple CV example created with HTML and CSS">
+    <meta name="author" content="Fly Nerd">
+    <link rel="icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <%- include('partials/navigation') %>
-    <h1>Bienvenidos a 
-        Mi Curriculum Web</h1>
-    
-  
-    <img src="/img/perfil.JPG" >
-    <%- include('partials/footer') %>
-    <body>
-        <div class="profile-container">
-          <!-- Perfil Profesional -->
-          <div class="section">
-            <h1>Perfil Profesional</h1>
-            <p>
-              Soy estudiante de Ingeniería de Sistemas, apasionado por la tecnología, la optimización de procesos y el desarrollo de soluciones innovadoras en entornos digitales. Durante mi formación académica, he adquirido una sólida base en programación, administración de bases de datos, redes y seguridad informática, complementada con habilidades en análisis de sistemas y gestión de proyectos.
-            </p>
-          </div>
-      
-          <!-- Datos Personales -->
-          <div class="section">
-            <h2>Datos Personales</h2>
-            <p><strong>Nombre:</strong> Roy Melvin Trujillo Mamani</p>
-            <p><strong>Teléfono:</strong> +51 989292899</p>
-            <p><strong>Email:</strong> roymelvin21@email.com</p>
-            <p><strong>Ubicación:</strong> Lima, Perú</p>
-          </div>
-      
-          <!-- Formación Académica -->
-          <div class="section">
-            <h2>Formación Académica</h2>
-            <ul>
-              <li><strong>Ingeniería de Sistemas</strong> - Universidad Peruana Union (2020 - Presente)</li>
-              <li><strong>Curso de Programación en Python</strong> - Platzi (2023)</li>
-              <li><strong>Certificación en Administración de Bases de Datos</strong> - Oracle Academy (2022)</li>
-            </ul>
-          </div>
-      
-          <!-- Proyectos -->
-          <div class="section">
-            <h2>Proyectos</h2>
-            <ul>
-              <li><strong>Sistema de Gestión de Inventario:</strong> Desarrollo de un sistema en JavaScript para la gestión de inventarios, optimizando el control de existencias y reportes de ventas.</li>
-              <li><strong>App de Tareas Colaborativas:</strong> Aplicación móvil desarrollada en Flutter para la organización de tareas en equipo, incluyendo integración de bases de datos Firebase y notificaciones en tiempo real.</li>
-              <li><strong>Análisis de Datos para Redes Sociales:</strong> Proyecto en Python para el análisis de tendencias en redes sociales utilizando técnicas de web scraping y análisis de sentimientos.</li>
-            </ul>
-          </div>
+ 
+  <header>
+    <div>
+      <img src="./img/avatar.jpg" />
+    </div>
+    <h1>ROY MELVIN TRUJILLO MAMANI</h1>
+    <section>
+      <p>Hello! I am Ocat Verdigris. I work as interface and front-end developer. I have passion for pixel perfect, minimal and easy to use interfaces. I'm  focused, dedicated, hard-working and willing to learn in a changing and challenging environment.</p>
+      <a href="https://www.facebook.com/theroyy/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.twitter.com/roymelvin21/" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/RoyMelvinT" target="_blank">
+        <i class="fab fa-github-alt"></i>
+      </a>
+      <a href="https://www.instagram.com/boonie.axz/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </section>
+  </header>
+  <main>
+    <section>
+      <h3>Courses & Workshops</h3>
+      <article class='course'>
+        <div class='title'>
+          <h4>Udacity: Intro to HTML and CSS</h4>
         </div>
-      </body>
+        <div class="descrition">
+          <p>Build styled, well-structured websites. Learn how to use HTML5 standard to create websites. Understand CSS syntax, selectors, and units. Learn about code editors and a browser's Developer Tools.</p>
+        </div>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>Udemy: The Web Developer Bootcamp</h4>
+        </div>
+        <div class="descrition">
+          <p>Learn how to create full-stack web applications from scratch using HTML, CSS, JavaScript, jQuery, VanillaJS, NodeJS, MongoDB.</p>
+        </div>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>EdX: Web Programming with JavaScript</h4>
+        </div>
+        <div class="descrition">
+          <p>Learn how to create web apps and prototypes with JavaScript, represent and exchange data using JavaScript Object Notation (JSON), and how to access RESTful APIs on the web.</p>
+        </div>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>Django Girls: 2-Day Workshops</h4>
+        </div>
+        <div class="descrition">
+          <p>Learn back-end development with simple blog application using Django  framework.</p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3>Skills</h3>
+      <div class='skills'>
+        <div class='column'>
+          <h4>Good knowledge</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript ES5/6</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class='column'>
+          <h4>Basic knowledge</h4>
+          <ul>
+            <li>jQuery</li>
+            <li>NodeJS</li>
+            <li>MongoDB</li>
+            <li>Django</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Languages</h4>
+          <p>🇵🇱 Polish - Native speaker</p>
+          <p>🇬🇧 English - Proficient C1/C2</p>
+          <p>🇫🇷 French - Advanced - C1</p>
+          <p>🇪🇸 Spanish - Intermediate - B1/B2</p>
+          <p>🇩🇪 German - Elementary / Communicative - A2</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <article>
+        <div class='school'>
+          <span>2015-2018</span> <strong>Octocats tech academy</strong>
+        </div>
+        <div class="descrition">
+          Bechelor Degree of Octorobotics
+        </div>
+      </article>
+      <article>
+        <div class='school'>
+          <span>2012-2015</span> <strong>Underwater kittens high school</strong>
+        </div>
+        <div>
+          Main subject: Cathemathics
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3>Experience</h3>
+      <article>
+        <div class='job-title'>
+          <span>03.2018 - 06.2018</span> <strong>Tentacles Company</strong><br> <strong>Position:</strong> Web developer Intern
+        </div>
+        <div>
+          <p><strong>Tech stack:</strong> HTML5 / CSS / JavaScript / jQuery</p>
+          <ul class="job-description">
+            <li>Develop web application for Octopoda departments</li>
+            <li>Implement UI (front-end site) based on received graphic design and requirements</li>
+            <li>Co-operate with the back-end team </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Created by: <a href="https://www.flynerd.pl/">@flynerd</a>  / <a href="https://www.linkedin.com/in/ritalyczywek/">LinkedIn</a> / 2018 </p>
+  </footer>
 </body>
 </html>
